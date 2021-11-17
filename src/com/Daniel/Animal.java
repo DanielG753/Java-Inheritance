@@ -1,5 +1,6 @@
 package com.Daniel;
 
+// This is the parent class that all animals will inherit from.
 public class Animal {
     private String name;
     private int brain;
@@ -15,6 +16,10 @@ public class Animal {
         this.weight = weight;
     }
 
+    /*
+     * All animals can eat and move. In our print-out we say that the "animal" is eating or moving to show which
+     * version of this method was called.
+     */
     public void eat() {
         System.out.println("The animal eats.");
     }
@@ -42,6 +47,4 @@ public class Animal {
     public int getWeight() {
         return weight;
     }
-
-
 }

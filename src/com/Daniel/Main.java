@@ -13,7 +13,12 @@ public class Main {
         Animal animal = new Animal("Animal", 1, 1,5,5);
         Dog dog = new Dog("Yorkie", 8, 20, 2,4,1,20,"long silky");
 
-        dog.eat();  //Even though eat() is defined in Animal, because Dog is an Animal it has that method as well.
+        /*
+         * These will call the overridden methods within Dog that also reference the parent class.
+         * In this way we can write code once for all animals, and reuse it within child classes like Dog.
+         * Each method call will print out showing which class is being used.
+         */
+        dog.eat();
         System.out.println();
 
         dog.move(5);
